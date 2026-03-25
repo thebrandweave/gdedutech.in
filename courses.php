@@ -348,6 +348,49 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
                     border: 1px solid rgba(207, 210, 211, 0.36);
                     color: black;
                 }
+
+                                /* Styling the Contact Button */
+.btn-contact {
+    background-color: #0079a8; /* Bootstrap primary color */
+    color: white;
+    border-radius: 50px; /* Fully rounded */
+    padding: 6px 10px;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size:16px;
+}
+
+/* Initial Arrow State */
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* Set initial rotation (45deg is standard for diagonal arrows) */
+    transform: rotate(2deg); 
+}
+
+
+/* Hover Effect: Move button slightly and Flex/Translate the arrow */
+.premium-card:hover .btn-contact {
+    background-color: #0079a9;
+    color:white;
+
+}
+
+ .arrow-icon{
+
+        background-color: white;
+        color:#d15a4f;
+        padding:0px 4px 0px 4px;
+        border-radius:50px;
+ }
+
+.premium-card:hover .arrow-icon {
+    /* "Flex" the arrow in the X direction while maintaining rotation */
+    transform: translateX(2px) rotate(43deg);
+    color:#d15a4f;
+}
+
             </style>
             
             <div class="row g-4">
@@ -447,6 +490,15 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
                                 <p class="card-text text-muted mb-4">
                                     Master front-end and back-end technologies with this intensive 16-week program covering HTML, CSS, JavaScript, React, Node.js...
                                 </p>
+                                 <div class="d-flex align-items-center">
+                   <a href="contact.php">
+                     <button class="btn btn-contact d-flex align-items-center">
+                        Contact Us
+                        <span class="arrow-icon ms-2">
+                            <i class="bi bi-arrow-up-right"></i> </span>
+                    </button>
+                   </a>
+                </div>
                             </div>
                         </div>
                     </a>
@@ -466,6 +518,15 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
                                 <p class="card-text text-muted mb-4">
                                     Master architectural and interior design with this program using BIM, AutoCAD, Revit, SketchUp, Vray, and Lumion.
                                 </p>
+                                 <div class="d-flex align-items-center">
+                   <a href="contact.php">
+                     <button class="btn btn-contact d-flex align-items-center">
+                        Contact Us
+                        <span class="arrow-icon ms-2">
+                            <i class="bi bi-arrow-up-right"></i> </span>
+                    </button>
+                   </a>
+                </div>
                             </div>
                         </div>
                     </a>
@@ -485,6 +546,15 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
                                 <p class="card-text text-muted mb-4">
                                     Master digital marketing with this program covering SEO, SMM, PPC, Google Ads, content marketing, web analytics, WordPress, and Photoshop.
                                 </p>
+                                 <div class="d-flex align-items-center">
+                   <a href="contact.php">
+                     <button class="btn btn-contact d-flex align-items-center">
+                        Contact Us
+                        <span class="arrow-icon ms-2">
+                            <i class="bi bi-arrow-up-right"></i> </span>
+                    </button>
+                   </a>
+                </div>
                             </div>
                         </div>
                     </a>
@@ -504,6 +574,15 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
                                 <p class="card-text text-muted mb-4">
                                     Master graphic design and video editing with this program using Canva, Photoshop, Illustrator, Premiere Pro, After Effects, and DaVinci Resolve.
                                 </p>
+                                 <div class="d-flex align-items-center">
+                   <a href="contact.php">
+                     <button class="btn btn-contact d-flex align-items-center">
+                        Contact Us
+                        <span class="arrow-icon ms-2">
+                            <i class="bi bi-arrow-up-right"></i> </span>
+                    </button>
+                   </a>
+                </div>
                             </div>
                         </div>
                     </a>
