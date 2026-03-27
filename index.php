@@ -53,8 +53,20 @@ $categories = $conn->query($categories_query)->fetch_all(MYSQLI_ASSOC);
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="https://gdedutech.com/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="https://gdedutech.com/favicon.ico">
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GD Edu Tech",
+      "url": "https://gdedutech.com",
+      "logo": "https://gdedutech.com/favicon.ico"
+    }
+    </script>
 </head>
 
 <body>
